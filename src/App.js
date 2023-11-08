@@ -26,7 +26,7 @@ function App() {
     <div className="App">
       <div className="container">
         <div className="row excuse-holder">
-          <h2> Generate an excuse </h2>
+          <h2> Click below to generate an excuse to get out of events: </h2>
           <button className="inputNameButton" onClick={fetchData}>
             Family
           </button>
@@ -56,17 +56,17 @@ function App() {
           </button>
         </div>
 
-        <div className="row">
-          <h2>
+        <div className="row excuse-holder">
+          <h4>
             {" "}
-            Here is an excuse to get out of your {reason?.category} event:
-          </h2>
+            Here's your excuse to get out of your {reason?.category} event:
+          </h4>
 
           <p>{reason?.excuse} </p>
         </div>
 
-        <div className="row">
-          <h3 className="api-response">Data Fetched from API:</h3>
+        <div className="row excuse-holder">
+          <h4 className="api-response">Data Fetched from API:</h4>
           <pre>{JSON.stringify(reason, null, 2)}</pre>
         </div>
       </div>
