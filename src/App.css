@@ -1,7 +1,17 @@
 /** @format */
 .container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: left;
+  justify-content: flex-start;
+  margin-bottom: 5%;
+  margin: 5%;
+  margin-top: 10%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
   align-items: left;
   justify-content: flex-start;
   margin-bottom: 5%;

@@ -25,14 +25,26 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <h2> Generate an excuse </h2>
-        <button className="inputNameButton" onClick={fetchData}>
-          Family
-        </button>
-        <h2> Here is an excuse to get out of your {reason?.category} event:</h2>
-        <p>{reason?.excuse} </p>
-        <h3>All fetched data:</h3>
-        <pre>{JSON.stringify(reason, null, 2)}</pre>
+        <div className="row">
+          <h2> Generate an excuse </h2>
+          <button className="inputNameButton" onClick={fetchData}>
+            Family
+          </button>
+        </div>
+
+        <div className="row">
+          <h2>
+            {" "}
+            Here is an excuse to get out of your {reason?.category} event:
+          </h2>
+
+          <p>{reason?.excuse} </p>
+        </div>
+
+        <div className="row">
+          <h3>All fetched data:</h3>
+          <pre>{JSON.stringify(reason, null, 2)}</pre>
+        </div>
       </div>
     </div>
   );
