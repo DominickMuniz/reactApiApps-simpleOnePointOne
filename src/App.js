@@ -25,10 +25,34 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <div className="row">
+        <div className="row excuse-holder">
           <h2> Generate an excuse </h2>
           <button className="inputNameButton" onClick={fetchData}>
             Family
+          </button>
+          <button className="inputNameButton" onClick={fetchData}>
+            Office
+          </button>
+          <button className="inputNameButton" onClick={fetchData}>
+            Children
+          </button>
+          <button className="inputNameButton" onClick={fetchData}>
+            College
+          </button>
+          <button className="inputNameButton" onClick={fetchData}>
+            Party
+          </button>
+          <button className="inputNameButton" onClick={fetchData}>
+            Funny
+          </button>
+          <button className="inputNameButton" onClick={fetchData}>
+            Unbelievable
+          </button>
+          <button className="inputNameButton" onClick={fetchData}>
+            Developers
+          </button>
+          <button className="inputNameButton" onClick={fetchData}>
+            Gaming
           </button>
         </div>
 

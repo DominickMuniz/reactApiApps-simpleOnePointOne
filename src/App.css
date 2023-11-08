@@ -1,7 +1,7 @@
 /** @format */
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: left;
   justify-content: flex-start;
   margin-bottom: 5%;
@@ -10,13 +10,18 @@
 }
 
 .row {
-  display: flex;
   flex-direction: row;
   align-items: left;
   justify-content: flex-start;
   margin-bottom: 5%;
   margin: 5%;
   margin-top: 10%;
+  width: 100%;
+}
+
+.row.excuse-holder {
+  background: 181818;
+  padding: 2%;
 }
 
 .inputName {
@@ -26,4 +31,8 @@
 
 .inputNameButton {
   width: 40%;
+}
+
+h2 {
+  font-size: 16px;
 }
