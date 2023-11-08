@@ -66,7 +66,7 @@ function App() {
         </div>
 
         <div className="row">
-          <h3>All fetched data:</h3>
+          <h3 className="api-response">Data Fetched from API:</h3>
           <pre>{JSON.stringify(reason, null, 2)}</pre>
         </div>
       </div>
